@@ -1,0 +1,55 @@
+/*
+    
+    INSTRUCTIONS
+    Fork this Pen and when you are done send me the link.
+
+    Using CSS properties alone, recreate this button: 
+
+        https://i.imgur.com/gnZnY.png. 
+
+    Spend no longer than 15 minutes on it, we don't 
+    expect it to be a perfect match. It's open book, 
+    feel free to hit Google but be prepared to 
+    explain your solution.
+
+*/
+a {
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid #646464;
+    color: #545358;
+    text-decoration: none;
+    text-align: center;
+	padding: 5px;
+}
+
+.border {
+    border-radius: 5px;
+    margin: 2px 3px;
+    padding: 5px;
+    display: block;
+    box-shadow: 0px 0px 4px 5px #C9C9C9;
+    border: 1px solid #7e7c7c;
+    background: linear-gradient(0deg, #b6b5ba 29%, #dedede 58%);
+}
+
+a::before {
+	content: "\2605";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 10px;
+    top: 10px;
+}
+
+a::after {
+	content: "\2605";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 10px;
+	top: 10px;
+}
